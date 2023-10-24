@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="image" slot="start">
+      <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="Vector" d="M23 15L13 15M23 8L1 8M23 1L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <ion-title>
+      Mes Traject
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="header" >
+    <span (click)="goBack()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+      retour
+    </span>
+  </div>
+  <div class="title">
+    Mettre à jour l’adresse et la localisation :
+  </div>
+  <form>
+    <label for="textara">
+      <div class="username">
+        SEMOUD AHMED 
+        <span class="classe">
+          (CP G1 675/23)
+        </span>
+      </div>
+    </label>
+    <textarea placeholder="23 BD mohamed 5 rue la fayetten Settat"></textarea>
+    <ion-item>
+      <ion-select
+        toggleIcon="chevron-down-outline"
+        expandedIcon="chevron-up-outline"
+        aria-label="Quartier"
+        placeholder="Quartier"
+      >
+        <ion-select-option value="quartier1">quartier 1</ion-select-option>
+        <ion-select-option value="quartier2">quartier 2</ion-select-option>
+        <ion-select-option value="quartier3">quartier 3</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button (click)="getCurrentLocation()" mode="md" class="take_location">
+      <div class="btn-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+          <path d="M13.5 2.25C17.2238 2.25 20.25 5.2425 20.25 8.94375C20.25 13.9613 13.5 21.375 13.5 21.375C13.5 21.375 6.75 13.9613 6.75 8.94375C6.75 5.2425 9.77625 2.25 13.5 2.25ZM13.5 6.75C12.9033 6.75 12.331 6.98705 11.909 7.40901C11.4871 7.83097 11.25 8.40326 11.25 9C11.25 9.59674 11.4871 10.169 11.909 10.591C12.331 11.0129 12.9033 11.25 13.5 11.25C14.0967 11.25 14.669 11.0129 15.091 10.591C15.5129 10.169 15.75 9.59674 15.75 9C15.75 8.40326 15.5129 7.83097 15.091 7.40901C14.669 6.98705 14.0967 6.75 13.5 6.75ZM22.5 21.375C22.5 23.8612 18.4725 25.875 13.5 25.875C8.5275 25.875 4.5 23.8612 4.5 21.375C4.5 19.9237 5.8725 18.63 7.99875 17.8088L8.71875 18.8325C7.50375 19.3387 6.75 20.0362 6.75 20.8125C6.75 22.365 9.77625 23.625 13.5 23.625C17.2238 23.625 20.25 22.365 20.25 20.8125C20.25 20.0362 19.4963 19.3387 18.2812 18.8325L19.0012 17.8088C21.1275 18.63 22.5 19.9237 22.5 21.375Z" fill="#515ED4"/>
+        </svg>
+        <span class="text">Prendre la localisation actuelle</span>
+      </div>
+    </ion-button>
+
+    <div class="location">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.464 18.535C2.93 20 5.286 20 10 20C14.714 20 17.071 20 18.535 18.535C20 17.072 20 14.714 20 10C20 5.286 20 2.929 18.535 1.464C17.072 0 14.714 0 10 0C5.286 0 2.929 0 1.464 1.464C0 2.93 0 5.286 0 10C0 14.714 0 17.071 1.464 18.535ZM14.934 6.196L11.423 15.362C11.104 16.192 9.94 16.219 9.692 15.402L8.635 11.925C8.59522 11.7926 8.52325 11.6722 8.42552 11.5745C8.32779 11.4768 8.20736 11.4048 8.075 11.365L4.598 10.308C3.781 10.06 3.808 8.896 4.638 8.578L13.804 5.065C13.9622 4.99839 14.1366 4.98045 14.305 5.01347C14.4734 5.0465 14.6282 5.12898 14.7495 5.25038C14.8707 5.37179 14.9531 5.5266 14.986 5.69504C15.0188 5.86348 15.0007 6.0379 14.934 6.196Z" fill="#CDCDCD"/>
+      </svg>
+      <span class="text">
+        N22 App 22 ,Rue 112 Nassim, Anfa, Casablanca
+      </span>
+    </div>
+
+    <label class="apply_to_sibling">
+      Appliquer aussi pour :
+    </label>
+    <div class="checkboxes">
+      <ion-checkbox justify="start" labelPlacement="end">
+        <span class="siblingname">
+          SEMOUD ROEYA 
+          <span class="siblingClasse">(CP G1)</span>
+         </span>
+        </ion-checkbox >
+      <ion-checkbox justify="start" labelPlacement="end">
+        <span class="siblingname">
+          SEMOUD ROEYA 
+          <span class="siblingClasse">(CP G1)</span> 
+        </span>
+      </ion-checkbox>
+    </div>
+
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button>Enregistrer les données</ion-button>
+  </ion-toolbar>
+</ion-footer>

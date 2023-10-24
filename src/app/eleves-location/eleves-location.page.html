@@ -1,0 +1,187 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="image" slot="start">
+      <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="Vector" d="M23 15L13 15M23 8L1 8M23 1L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <ion-title>
+      Mes Traject
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="header" (click)="goBack()">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+    retour
+  </div>
+  <div class="title">
+    Mise à jour de la localisation :
+  </div>
+  <div class="filter">
+    <ion-item>
+      <ion-select
+        toggleIcon="chevron-down-outline"
+        expandedIcon="chevron-up-outline"
+        aria-label="Quartier"
+        placeholder="Quartier"
+      >
+        <ion-select-option value="quartier1">quartier 1</ion-select-option>
+        <ion-select-option value="quartier2">quartier 2</ion-select-option>
+        <ion-select-option value="quartier3">quartier 3</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select
+        toggleIcon="chevron-down-outline"
+        expandedIcon="chevron-up-outline"
+        aria-label="Sous quartier"
+        placeholder="Sous quartier"
+      >
+        <ion-select-option value="sousquartier1">Sous quartier 1</ion-select-option>
+        <ion-select-option value="sousquartier2">Sous quartier 2</ion-select-option>
+        <ion-select-option value="sousquartier3">Sous quartier 3</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col (click)="goTo(1)">
+        <div class="infos">
+          <div class="user">
+            <div class="username">
+              SEMOUD AHMED 
+              <span class="classe">
+                (CP G1 675/23)
+              </span>
+            </div>
+            <div class="quartier">
+              23 BD mohamed 5 rue la fayetten Settat
+            </div>
+          </div>
+          <div class="badge">
+            Hay Mohammadi
+          </div>
+        </div>
+        <div class="etat">
+          <span class="done">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M36.728 34.7278L24 47.4558L11.272 34.7278C8.75469 32.2105 7.04037 29.0032 6.34586 25.5115C5.65134 22.0199 6.00781 18.4007 7.3702 15.1116C8.73258 11.8226 11.0397 9.01139 13.9998 7.03353C16.9598 5.05568 20.44 4 24 4C27.5601 4 31.0402 5.05568 34.0002 7.03353C36.9603 9.01139 39.2674 11.8226 40.6298 15.1116C41.9922 18.4007 42.3487 22.0199 41.6542 25.5115C40.9596 29.0032 39.2453 32.2105 36.728 34.7278Z" fill="white"/>
+              <path 
+                d="M31.9984 16.5469L21.2734 28.2469L16.3984 22.9287" 
+                stroke-width="2.6" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"/>  
+            </svg>
+          </span>
+        </div>
+      </ion-col>
+      <ion-col (click)="goTo(1)">
+        <div class="infos">
+          <div class="user">
+            <div class="username">
+              SEMOUD AHMED 
+              <span class="classe">
+                (CP G1 675/23)
+              </span>
+            </div>
+            <div class="quartier">
+              23 BD mohamed 5 rue la fayetten Settat
+            </div>
+          </div>
+          <div class="badge">
+            Hay Mohammadi
+          </div>
+        </div>
+        <div class="etat">
+          <span class="notdone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M36.728 34.7278L24 47.4558L11.272 34.7278C8.75469 32.2105 7.04037 29.0032 6.34586 25.5115C5.65134 22.0199 6.00781 18.4007 7.3702 15.1116C8.73258 11.8226 11.0397 9.01139 13.9998 7.03353C16.9598 5.05568 20.44 4 24 4C27.5601 4 31.0402 5.05568 34.0002 7.03353C36.9603 9.01139 39.2674 11.8226 40.6298 15.1116C41.9922 18.4007 42.3487 22.0199 41.6542 25.5115C40.9596 29.0032 39.2453 32.2105 36.728 34.7278Z" fill="white"/>
+              <path 
+                d="M23.6071 13C25.3095 13 26.9736 13.5048 28.389 14.4506C29.8045 15.3963 30.9077 16.7406 31.5591 18.3133C32.2106 19.8861 32.381 21.6167 32.0489 23.2863C31.7168 24.9559 30.8971 26.4896 29.6933 27.6933C28.4896 28.897 26.9559 29.7168 25.2863 30.0489C23.6167 30.381 21.8861 30.2106 20.3133 29.5591C18.7406 28.9077 17.3963 27.8045 16.4506 26.389C15.5048 24.9736 15 23.3095 15 21.6071C14.9973 19.1415 15.9459 16.7699 17.6484 14.9863" 
+                stroke-width="1.48308" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"
+              />
+              <path 
+                d="M15 15.6465L17.6484 14.9844L18.3104 17.6327M23.6071 16.9706V22.2673L27.05 23.9888" 
+                stroke-width="1.48308" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+      </ion-col>
+      <ion-col (click)="goTo(1)">
+        <div class="infos">
+          <div class="user">
+            <div class="username">
+              SEMOUD AHMED 
+              <span class="classe">
+                (CP G1 675/23)
+              </span>
+            </div>
+            <div class="quartier">
+              23 BD mohamed 5 rue la fayetten Settat
+            </div>
+          </div>
+          <div class="badge">
+            Hay Mohammadi
+          </div>
+        </div>
+        <div class="etat">
+          <span class="done">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M36.728 34.7278L24 47.4558L11.272 34.7278C8.75469 32.2105 7.04037 29.0032 6.34586 25.5115C5.65134 22.0199 6.00781 18.4007 7.3702 15.1116C8.73258 11.8226 11.0397 9.01139 13.9998 7.03353C16.9598 5.05568 20.44 4 24 4C27.5601 4 31.0402 5.05568 34.0002 7.03353C36.9603 9.01139 39.2674 11.8226 40.6298 15.1116C41.9922 18.4007 42.3487 22.0199 41.6542 25.5115C40.9596 29.0032 39.2453 32.2105 36.728 34.7278Z" fill="white"/>
+              <path 
+                d="M31.9984 16.5469L21.2734 28.2469L16.3984 22.9287" 
+                stroke-width="2.6" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"/>  
+            </svg>
+          </span>
+        </div>
+      </ion-col>
+      <ion-col (click)="goTo(1)">
+        <div class="infos">
+          <div class="user">
+            <div class="username">
+              SEMOUD AHMED 
+              <span class="classe">
+                (CP G1 675/23)
+              </span>
+            </div>
+            <div class="quartier">
+              23 BD mohamed 5 rue la fayetten Settat
+            </div>
+          </div>
+          <div class="badge">
+            Hay Mohammadi
+          </div>
+        </div>
+        <div class="etat">
+          <span class="notdone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M36.728 34.7278L24 47.4558L11.272 34.7278C8.75469 32.2105 7.04037 29.0032 6.34586 25.5115C5.65134 22.0199 6.00781 18.4007 7.3702 15.1116C8.73258 11.8226 11.0397 9.01139 13.9998 7.03353C16.9598 5.05568 20.44 4 24 4C27.5601 4 31.0402 5.05568 34.0002 7.03353C36.9603 9.01139 39.2674 11.8226 40.6298 15.1116C41.9922 18.4007 42.3487 22.0199 41.6542 25.5115C40.9596 29.0032 39.2453 32.2105 36.728 34.7278Z" fill="white"/>
+              <path 
+                d="M23.6071 13C25.3095 13 26.9736 13.5048 28.389 14.4506C29.8045 15.3963 30.9077 16.7406 31.5591 18.3133C32.2106 19.8861 32.381 21.6167 32.0489 23.2863C31.7168 24.9559 30.8971 26.4896 29.6933 27.6933C28.4896 28.897 26.9559 29.7168 25.2863 30.0489C23.6167 30.381 21.8861 30.2106 20.3133 29.5591C18.7406 28.9077 17.3963 27.8045 16.4506 26.389C15.5048 24.9736 15 23.3095 15 21.6071C14.9973 19.1415 15.9459 16.7699 17.6484 14.9863" 
+                stroke-width="1.48308" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"
+              />
+              <path 
+                d="M15 15.6465L17.6484 14.9844L18.3104 17.6327M23.6071 16.9706V22.2673L27.05 23.9888" 
+                stroke-width="1.48308" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

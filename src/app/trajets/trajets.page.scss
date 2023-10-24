@@ -1,0 +1,203 @@
+ion-header {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    ion-toolbar {
+        --background: var(--main-color);
+        --min-height: 57px;
+
+        --padding-start: 10px;
+        --padding-end: 10px;
+        --padding-top: 0;
+        --padding-bottom: 0;
+
+        .image {
+            padding: 10px;
+        }
+
+        ion-title {
+            --color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 25px;
+            padding: 0;
+            padding-left: 9px;
+        }
+    }
+}
+
+
+ion-content {
+    --padding-top: 20px;
+    --padding-bottom: 70px;
+
+    .header {
+        padding-inline: 30px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        gap: 7px;
+
+        color: #12122C;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    ion-grid {
+      padding: 0 12px;
+
+      ion-row {
+        justify-content: space-between;
+        gap: 30px;
+        ion-col {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          padding: 20px 10px;
+          border-radius: 12px;
+          border: 1px solid #E9E9E9;
+          background: #FFF;
+
+          .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            .head {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              color: #12122C;
+              font-size: 16px;
+              font-weight: 600;
+              letter-spacing: -0.64px;
+            }
+
+            .main {
+              padding: 0 10px;
+              display: flex;
+              flex-direction: column;
+              gap: 22px;
+
+              .timeAction {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                column-gap: 13px;
+                row-gap: 13px;
+
+                .time {
+                  border: 0.567px solid #A3A3A3;
+
+                  color: #515ED4;
+                  font-size: 16px;
+                  font-weight: 700;
+                  letter-spacing: -0.32px;
+                }
+
+                .action {
+                  font-size: 16px;
+                  font-weight: 700;
+                  letter-spacing: -0.32px;
+
+                  &.deposer {
+                    color: #FFA318;
+                    border: 0.944px solid #FFA318;
+                  }
+                  &.recuperer {
+                    color: #3FCC6E;
+                    border: 0.944px solid #3FCC6E;
+                  }
+                }
+
+                .badge {
+                  display: flex;
+                  height: 40px;
+                  padding: 10px;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  border-radius: 9px;
+                }
+              }
+
+              .infos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                column-gap: 29px;
+
+
+                .pic {
+                  &::part(image) {
+                    width: 90px;
+                    height: 90px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                  }
+                }
+
+                .user {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                  align-items: center;
+                  text-align: center;
+
+                  .username {
+                    color: #12122C;
+                    font-size: 18px;
+                    font-weight: 600;
+                    letter-spacing: -0.72px;
+                  }
+
+                  .bus {
+                    display: flex;
+                    height: 35px;
+
+                    span {
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      padding-inline: 10px;
+
+                      &:first-child {
+                        color: #A7A7A7;
+                        font-size: 16.352px;
+                        font-weight: 600;
+                        letter-spacing: -0.164px;
+                        border: 1px solid #A7A7A7;
+
+                      }
+
+                      &:last-child {
+                        // padding: 10px;
+                        background: #A7A7A7;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .arrow {
+            color:#C1C1C1;
+          }
+
+        }
+      }
+    }
+
+    .setting_local {
+      right: 15px;
+      ion-fab-button {
+        --background: var(--main-color)
+      }
+    }
+}
